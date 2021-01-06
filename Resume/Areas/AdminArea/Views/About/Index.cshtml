@@ -1,0 +1,40 @@
+﻿@model Resume.Models.SectionAbout
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/AdminArea/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Section About</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                Image
+            </th>
+            <th>
+                Header
+            </th>
+            <th>
+                Description
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td class="py-1">
+                    <img src="@Model.PhotoUrl" alt="image">
+                </td>
+                <td>
+                    @Model.Header
+                </td>
+                <td>
+                    @Model.Description
+                </td>
+                <td>
+                    <a href="@Url.Action("Edit","About",new { id=Model.ID})">Edit</a>
+                </td>
+            </tr>
+    </tbody>
+</table>

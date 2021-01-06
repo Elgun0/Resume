@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.beingeorge.com/justin/Light/index-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Dec 2020 12:44:43 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Justin - Personal Portfolio</title>
+    <meta name="description" content="Justin - Personal Portfolio" />
+    <meta name="keywords" content="blog, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard" />
+    <meta name="author" content="beingeorge" />
+    <meta name="theme-color" content="#2a2d35">
+
+    <!-- Vendor Css-->
+    <link rel="stylesheet" href="~/FrontWeb/css/vendor.css" />
+
+    <!-- Settings-panel -->
+    <link href="~/FrontWeb/css/settings.css" rel="stylesheet">
+
+    <!-- Custom style Css -->
+    <link href="~/FrontWeb/css/custom.css" rel="stylesheet">
+
+    <!-- JustinTemplate style Css -->
+    <link rel="stylesheet" href="~/FrontWeb/css/justin-red.css">
+    <!-- <link rel="stylesheet" href="~/FrontWeb/css/justin-pink.css"> -->
+    <!-- <link rel="stylesheet" href="~/FrontWeb/css/justin-yellow.css"> -->
+    <!-- <link rel="stylesheet" href="~/FrontWeb/css/justin-purple.css"> -->
+    <!-- <link rel="stylesheet" href="~/FrontWeb/css/justin-green.css"> -->
+    <!-- <link rel="stylesheet" href="~/FrontWeb/css/justin-blue.css"> -->
+    <!-- <link rel="stylesheet" href="~/FrontWeb/css/justin--deep-blue.css"> -->
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+
+    <!-- Setting Panel -->
+
+    <div class="settings_panel">
+        <div class="toggle_bts">
+            <a class="toggle-theme-panel" href="#">
+                <i class="fa fa-cog"></i>
+            </a>
+        </div>
+        <div class="settings-content">
+            <h5>Color Switcher</h5>
+            <ul class="colors-switch">
+                <li><a href="#" title="justin-green" class="justin-green"></a></li>
+                <li><a href="#" title="justin-pink" class="justin-pink"></a></li>
+                <li><a href="#" title="justin-yellow" class="justin-yellow"></a></li>
+                <li><a href="#" title="justin-purple" class="justin-purple"></a></li>
+                <li><a href="#" title="justin-blue" class="justin-blue"></a></li>
+                <li><a href="#" title="justin-red" class="justin-red"></a></li>
+                <li><a href="#" title="justin-deep-blue" class="justin-deep-blue"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Setting Panel -->
+    <!-- START: Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="spinner-grow text-dark" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- END: Preloader -->
+
+    <div class="page-wrapper">
+
+        <nav class="navbar navbar-expand-lg navbar-custom navbar-light fixed-top">
+            <div class="container">
+
+                <a class="navbar-brand  mr-auto " href="index.html">
+                    Justin
+                    <!-- <img src="~/FrontWeb/images/logo.png" alt="Logo"> -->
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="60"><path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"></path><path class="line middle" d="m 30,50 h 40"></path><path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"></path></svg>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a class="nav-link active" href="#home">home</a></li>
+                        <li><a class="nav-link" href="#services">Service</a></li>
+                        <li><a class="nav-link" href="#resume">EXPERTISES</a></li>
+                        <li><a class="nav-link" href="#work">Works</a></li>
+                        <li><a class="nav-link" href="#blog">Blog</a></li>
+                        <li><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        @RenderBody()
+
+        <!--START: FOOTER-->
+        <footer class="footer section section-light">
+            <div class="container">
+                <p class="copyright text-center mb-0">&copy; Justin 2020 | All Right Reserved</p>
+            </div>
+        </footer>
+        <!--END: FOOTER-->
+
+        <!-- JAVASCRIPTS -->
+
+        <script src="~/FrontWeb/js/vendor.js"></script>
+        <script src="~/FrontWeb/js/smooth-scroll.html"></script>
+
+        <!-- Map -->
+        <script src="~/FrontWeb/js/map.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD79MY72taVRlZVX2DU6L5PXOh3ezUUKMc&amp;callback=initMap" async="" defer=""></script>
+
+        <!-- Contact Js -->
+        <script src="~/FrontWeb/js/contact.js"></script>
+
+        <!-- Custom Js -->
+        <script src="~/FrontWeb/js/custom.js"></script>
+</body>
+
+<!-- Mirrored from www.beingeorge.com/justin/Light/index-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Dec 2020 12:44:52 GMT -->
+</html>

@@ -1,0 +1,33 @@
+﻿@model Resume.Models.SectionAbout
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/AdminArea/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Edit Section About</h2>
+
+<div class="card">
+    <div class="card-body">
+        <form class="forms-sample" method="post">
+            <div class="form-group">
+                <img width="160" height="160" src="@Model.PhotoUrl" class="img-thumbnail" alt="Alternate Text" />
+            </div>
+            <div class="form-group">
+                <label>File upload</label>
+                <div class="input-group col-xs-12">
+                    <input type="file" class="form-control file-upload-info" name="image" placeholder="Upload Image">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputCity1">Header</label>
+                <input type="text" class="form-control" id="exampleInputCity1" name="header" value="@Model.Header" placeholder="Header">
+            </div>
+            <div class="form-group">
+                <label for="exampleTextarea1">Description</label>
+                <textarea class="form-control" id="exampleTextarea1" name="description" rows="2">@Model.Description</textarea>
+            </div>
+            <button type="submit" class="btn btn-success mr-2">Submit</button>
+            <button class="btn btn-light">Cancel</button>
+        </form>
+    </div>
+</div>

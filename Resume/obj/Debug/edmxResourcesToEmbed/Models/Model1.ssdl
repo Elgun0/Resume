@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ResumeDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Expertises1">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Header" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Middle" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Expertises1h">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Header" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Middle" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Expertises2">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Skill1" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Skill2" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Skill3" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Skill4" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Section1">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PhotoUrl" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Header" Type="nvarchar" MaxLength="200" />
+    <Property Name="Description" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="SectionAbout">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Header" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="PhotoUrl" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="FbLink" Type="varchar" MaxLength="500" />
+    <Property Name="LinkedinLink" Type="varchar" MaxLength="500" />
+    <Property Name="StackoverflowLink" Type="varchar" MaxLength="500" />
+    <Property Name="DribbbleLink" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="SectionArticles">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PhotoUrl" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Header" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SectionServices">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PhotoUrl" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="BtnName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Icon" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Header" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SectionTestimonial">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PhotoUrl" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Header" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SectionWorks">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PhotoUrl" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Header" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityContainer Name="ResumeDBModelStoreContainer">
+    <EntitySet Name="Expertises1" EntityType="Self.Expertises1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Expertises1h" EntityType="Self.Expertises1h" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Expertises2" EntityType="Self.Expertises2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Section1" EntityType="Self.Section1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SectionAbout" EntityType="Self.SectionAbout" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SectionArticles" EntityType="Self.SectionArticles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SectionServices" EntityType="Self.SectionServices" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SectionTestimonial" EntityType="Self.SectionTestimonial" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SectionWorks" EntityType="Self.SectionWorks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
